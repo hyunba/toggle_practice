@@ -7,7 +7,7 @@ import styled from "styled-components";
 const Container = styled.div`
     width: 200px;
     height: 200px;
-    
+    background-color: teal;
 `;
 
 // interface CircleProps {
@@ -16,8 +16,7 @@ const Container = styled.div`
 
 function Circle() {
     return (
-        // <Container/>
-        <div>hi</div>
+        <div><Container/></div>
     );
 }
 
