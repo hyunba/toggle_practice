@@ -1,22 +1,22 @@
 import styled from "styled-components";
 
-// interface ContainerProps {
-//     // bgColor: string;
-// }
+interface ContainerProps {
+    bgColor: string;
+}
 
-const Container = styled.div`
+const Container = styled.div<ContainerProps>`
     width: 200px;
     height: 200px;
-    background-color: teal;
+    background-color: ${(props) => props.bgColor};
 `;
 
-// interface CircleProps {
-//     bgColor: string;
-// }
+interface CircleProps {
+    bgColor: string;
+}
 
-function Circle() {
+function Circle({bgColor}: CircleProps) {
     return (
-        <div><Container/></div>
+        <Container bgColor={bgColor}/>
     );
 }
 
